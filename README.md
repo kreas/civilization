@@ -95,16 +95,16 @@ Open [http://localhost:3000](http://localhost:3000) — you should see the landi
 
 ## Scripts
 
-| Command | Description |
-|---------|-------------|
-| `pnpm dev` | Start dev server (Turbopack) |
-| `pnpm build` | Production build |
-| `pnpm start` | Start production server |
-| `pnpm lint` | Run ESLint |
-| `pnpm db:generate` | Generate Drizzle migrations |
-| `pnpm db:migrate` | Run Drizzle migrations |
-| `pnpm db:push` | Push schema directly to database |
-| `pnpm db:studio` | Open Drizzle Studio |
+| Command            | Description                      |
+| ------------------ | -------------------------------- |
+| `pnpm dev`         | Start dev server (Turbopack)     |
+| `pnpm build`       | Production build                 |
+| `pnpm start`       | Start production server          |
+| `pnpm lint`        | Run ESLint                       |
+| `pnpm db:generate` | Generate Drizzle migrations      |
+| `pnpm db:migrate`  | Run Drizzle migrations           |
+| `pnpm db:push`     | Push schema directly to database |
+| `pnpm db:studio`   | Open Drizzle Studio              |
 
 ## Project Structure
 

@@ -24,7 +24,7 @@ export async function uploadFile(key: string, body: Buffer | ReadableStream, con
       Key: key,
       Body: body,
       ContentType: contentType,
-    })
+    }),
   );
 }
 
@@ -33,7 +33,7 @@ export async function deleteFile(key: string) {
     new DeleteObjectCommand({
       Bucket: bucket,
       Key: key,
-    })
+    }),
   );
 }
 
@@ -44,7 +44,7 @@ export async function getDownloadUrl(key: string, expiresIn = 3600) {
       Bucket: bucket,
       Key: key,
     }),
-    { expiresIn }
+    { expiresIn },
   );
 }
 
@@ -56,6 +56,6 @@ export async function getUploadUrl(key: string, contentType: string, expiresIn =
       Key: key,
       ContentType: contentType,
     }),
-    { expiresIn }
+    { expiresIn },
   );
 }

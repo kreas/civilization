@@ -18,9 +18,7 @@ export default async function Home() {
           </div>
         ) : (
           <div className="flex flex-col items-center gap-4">
-            <p className="text-lg text-muted-foreground">
-              Get started by signing in.
-            </p>
+            <p className="text-lg text-muted-foreground">Get started by signing in.</p>
             <div className="flex gap-3">
               <a
                 href={signInUrl}

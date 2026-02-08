@@ -1,6 +1,7 @@
 # AI Starter
 
 ## Build & Dev Commands
+
 - `pnpm dev` — Start dev server (Turbopack)
 - `pnpm build` — Production build
 - `pnpm start` — Start production server
@@ -13,6 +14,7 @@
 - `pnpm test:watch` — Run tests in watch mode
 
 ## Architecture
+
 - **Framework**: Next.js 15 (App Router, TypeScript, Turbopack)
 - **Styling**: Tailwind CSS v4 + ShadCN UI (new-york style, neutral base)
 - **Database**: Drizzle ORM + Turso (libsql/SQLite)
@@ -23,6 +25,7 @@
 - **Testing**: Vitest + React Testing Library
 
 ## Project Structure
+
 - `src/app/` — Next.js App Router pages and layouts
 - `src/db/` — Drizzle schema (`schema.ts`) and client (`index.ts`)
 - `src/lib/` — Shared utilities (`utils.ts`, `r2.ts`)
@@ -31,9 +34,11 @@
 - `drizzle/` — Generated migrations
 
 ## Design Inspirations
+
 Before building or modifying any UI (pages, components, layouts), **always read the images in `sources/inspiration/`** first. These are design references that define the visual direction of the app. Match the style, spacing, color usage, and layout patterns found in these inspirations. If no inspiration images exist yet, ask the user for direction.
 
 ## Conventions
+
 - Use `src/` directory for all application code
 - Import alias: `@/` maps to `src/`
 - Use ShadCN components via `pnpm dlx shadcn@latest add <component>`
@@ -46,6 +51,7 @@ Before building or modifying any UI (pages, components, layouts), **always read 
 - Environment variables in `.env.local` (see `.env.example` for template)
 
 ## Data Fetching
+
 - **Use TanStack Query for all client-side API calls.** Do not use server actions.
 - Use `useQuery` for GET requests (reading data)
 - Use `useMutation` for POST/PUT/DELETE requests (writing data), with `queryClient.invalidateQueries` to refresh related data after mutations
@@ -53,6 +59,7 @@ Before building or modifying any UI (pages, components, layouts), **always read 
 - The `QueryClientProvider` is already set up in `src/components/providers.tsx`
 
 ## Testing
+
 - **Every component must have a test file.** When creating or modifying a component, always create or update a corresponding `.test.tsx` file alongside it.
 - Test files live next to the code they test: `ComponentName.tsx` → `ComponentName.test.tsx`
 - Use React Testing Library for component tests — test behavior and user interactions, not implementation details
@@ -60,7 +67,9 @@ Before building or modifying any UI (pages, components, layouts), **always read 
 - Run `pnpm test` to verify all tests pass before committing
 
 ## Agent Teams
+
 Agent teams are enabled for this project. When working as a team:
+
 - **File ownership**: Each teammate should own distinct files — never have two teammates editing the same file
 - **Task sizing**: Break work into self-contained units that produce a clear deliverable (a component, a route, a test file)
 - **Recommended team structures**:

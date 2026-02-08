@@ -2,7 +2,7 @@
 name: setup-project
 description: Set up the ai-starter project for local development. Guides the user through installing dependencies, configuring environment variables, and running the dev server.
 disable-model-invocation: true
-argument-hint: ""
+argument-hint: ''
 allowed-tools: Read, Bash(pnpm *), Bash(openssl *), Bash(cp *)
 ---
 
@@ -31,6 +31,7 @@ Then walk the user through filling in each section, one at a time.
 Ask the user for their Turso database URL and auth token. They can create a database at https://turso.tech.
 
 Set these values in `.env.local`:
+
 - `TURSO_DATABASE_URL` — e.g. `libsql://my-db-username.turso.io`
 - `TURSO_AUTH_TOKEN` — their database auth token
 
@@ -39,6 +40,7 @@ Set these values in `.env.local`:
 Ask the user for their R2 credentials. They can set up R2 at https://dash.cloudflare.com (R2 Object Storage).
 
 Set these values in `.env.local`:
+
 - `R2_ACCOUNT_ID` — their Cloudflare account ID
 - `R2_ACCESS_KEY_ID` — R2 API token access key
 - `R2_SECRET_ACCESS_KEY` — R2 API token secret key
@@ -49,6 +51,7 @@ Set these values in `.env.local`:
 Ask the user for their WorkOS credentials. They can create a project at https://workos.com.
 
 Set these values in `.env.local`:
+
 - `WORKOS_CLIENT_ID` — starts with `client_`
 - `WORKOS_API_KEY` — starts with `sk_test_` or `sk_live_`
 - `WORKOS_COOKIE_PASSWORD` — generate one automatically:
@@ -66,6 +69,7 @@ openssl rand -base64 24
 Ask the user for their Anthropic API key. They can get one at https://console.anthropic.com/.
 
 Set this value in `.env.local`:
+
 - `ANTHROPIC_API_KEY` — starts with `sk-ant-`
 
 ## Step 3: Push database schema
@@ -87,6 +91,7 @@ Confirm the app starts at http://localhost:3000 without errors.
 ## Step 5: Verify
 
 Tell the user to open http://localhost:3000 in their browser. They should see:
+
 - The "AI Starter" heading
 - "Sign In" and "Sign Up" buttons (if not authenticated)
 - No console errors

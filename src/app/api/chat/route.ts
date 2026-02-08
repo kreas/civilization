@@ -1,10 +1,5 @@
 import { anthropic } from '@ai-sdk/anthropic';
-import {
-  streamText,
-  UIMessage,
-  convertToModelMessages,
-  stepCountIs,
-} from 'ai';
+import { streamText, UIMessage, convertToModelMessages, stepCountIs } from 'ai';
 
 export async function POST(req: Request) {
   const { messages }: { messages: UIMessage[] } = await req.json();

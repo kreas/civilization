@@ -39,7 +39,7 @@ Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>
 ```
 
 - Use imperative mood: "Add feature" not "Added feature" or "Adds feature"
-- First line should complete the sentence: "If applied, this commit will ___"
+- First line should complete the sentence: "If applied, this commit will \_\_\_"
 - Categorize accurately: "Add" = new, "Update" = enhance existing, "Fix" = bug fix, "Remove" = delete, "Refactor" = restructure without behavior change
 - Body is optional for self-explanatory changes, but include it for anything non-obvious
 - Always include Co-Authored-By trailer
@@ -56,11 +56,13 @@ Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>
 ## Example
 
 If `git status` shows changes to `package.json`, `pnpm-lock.yaml`, `src/lib/r2.ts`, `src/app/page.tsx`, and `README.md`, and the changes are:
+
 - Added a new dependency
 - Updated the R2 helper with a new function
 - Fixed a typo in the README
 
 That's **three** commits:
+
 1. `Add <package> dependency` (package.json + pnpm-lock.yaml)
 2. `Add <function> helper to R2 module` (src/lib/r2.ts)
 3. `Fix typo in README` (README.md)

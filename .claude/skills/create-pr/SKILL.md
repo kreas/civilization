@@ -29,6 +29,7 @@ When the user asks to create a pull request, follow this process.
    - **Body:** Use the template below.
 
 5. **Create the PR.**
+
    ```bash
    gh pr create --title "title" --body "$(cat <<'EOF'
    <body content>
@@ -42,12 +43,15 @@ When the user asks to create a pull request, follow this process.
 
 ```markdown
 ## Summary
+
 <1-3 bullet points explaining WHAT changed and WHY>
 
 ## Changes
+
 <Bulleted list of notable changes, grouped logically>
 
 ## Test Plan
+
 - [ ] <How to verify this works — manual steps, commands, or automated tests>
 ```
 
