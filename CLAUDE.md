@@ -26,6 +26,9 @@
 - `drizzle.config.ts` — Drizzle Kit configuration
 - `drizzle/` — Generated migrations
 
+## Design Inspirations
+Before building or modifying any UI (pages, components, layouts), **always read the images in `sources/inspiration/`** first. These are design references that define the visual direction of the app. Match the style, spacing, color usage, and layout patterns found in these inspirations. If no inspiration images exist yet, ask the user for direction.
+
 ## Conventions
 - Use `src/` directory for all application code
 - Import alias: `@/` maps to `src/`
