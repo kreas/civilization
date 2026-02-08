@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'AI Starter',
-  description: 'AI Starter App',
+  title: 'AI Starter Pack',
+  description: 'AI Starter Pack',
 };
 
 export default function RootLayout({

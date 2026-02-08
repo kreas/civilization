@@ -1,15 +1,18 @@
-# AI Starter
+# AI Starter Pack
 
-A Next.js 15 starter template with authentication, database, file storage, and a component library pre-configured.
+A batteries-included Next.js starter template for building AI-powered applications. Comes pre-configured with authentication, database, file storage, AI integration, and a full component library.
 
 ## Tech Stack
 
-- **Framework:** Next.js 15 (App Router, TypeScript, Turbopack)
-- **Styling:** Tailwind CSS v4 + ShadCN UI
+- **Framework:** Next.js 16 (App Router, TypeScript, Turbopack)
+- **Styling:** Tailwind CSS v4 + ShadCN UI + AI Elements
 - **Database:** Drizzle ORM + Turso (libsql/SQLite)
 - **Storage:** Cloudflare R2
 - **Auth:** WorkOS AuthKit
 - **AI:** Vercel AI SDK + Anthropic
+- **Data Fetching:** TanStack Query
+- **Testing:** Vitest + React Testing Library
+- **Formatting:** Prettier + EditorConfig
 
 ## Prerequisites
 
@@ -21,6 +24,8 @@ A Next.js 15 starter template with authentication, database, file storage, and a
 - An [Anthropic](https://console.anthropic.com/) API key
 
 ## Setup
+
+If you're using [Claude Code](https://claude.com/claude-code), run `/setup-project` for a guided walkthrough. Otherwise, follow the steps below.
 
 ### 1. Install dependencies
 
@@ -95,40 +100,64 @@ Open [http://localhost:3000](http://localhost:3000) — you should see the landi
 
 ## Scripts
 
-| Command            | Description                      |
-| ------------------ | -------------------------------- |
-| `pnpm dev`         | Start dev server (Turbopack)     |
-| `pnpm build`       | Production build                 |
-| `pnpm start`       | Start production server          |
-| `pnpm lint`        | Run ESLint                       |
-| `pnpm db:generate` | Generate Drizzle migrations      |
-| `pnpm db:migrate`  | Run Drizzle migrations           |
-| `pnpm db:push`     | Push schema directly to database |
-| `pnpm db:studio`   | Open Drizzle Studio              |
+| Command              | Description                      |
+| -------------------- | -------------------------------- |
+| `pnpm dev`           | Start dev server (Turbopack)     |
+| `pnpm build`         | Production build                 |
+| `pnpm start`         | Start production server          |
+| `pnpm lint`          | Run ESLint                       |
+| `pnpm format`        | Format code with Prettier        |
+| `pnpm format:check`  | Check formatting                 |
+| `pnpm test`          | Run tests                        |
+| `pnpm test:watch`    | Run tests in watch mode          |
+| `pnpm db:generate`   | Generate Drizzle migrations      |
+| `pnpm db:migrate`    | Run Drizzle migrations           |
+| `pnpm db:push`       | Push schema directly to database |
+| `pnpm db:studio`     | Open Drizzle Studio              |
 
 ## Project Structure
 
 ```
 src/
-├── app/                # Next.js App Router pages and layouts
-│   ├── api/chat/       # AI chat API route (streaming)
-│   ├── callback/       # WorkOS auth callback route
-│   ├── globals.css     # Tailwind + ShadCN theme
-│   ├── layout.tsx      # Root layout
-│   └── page.tsx        # Home page
+├── app/                  # Next.js App Router pages and layouts
+│   ├── api/chat/         # AI chat API route (streaming)
+│   ├── callback/         # WorkOS auth callback route
+│   ├── globals.css       # Tailwind + ShadCN theme
+│   ├── layout.tsx        # Root layout
+│   └── page.tsx          # Home page
+├── components/
+│   └── providers.tsx     # Client providers (TanStack Query)
 ├── db/
-│   ├── index.ts        # Drizzle database client
-│   └── schema.ts       # Database schema (users table)
+│   ├── index.ts          # Drizzle database client
+│   └── schema.ts         # Database schema (users table)
 ├── lib/
-│   ├── r2.ts           # Cloudflare R2 helpers
-│   └── utils.ts        # ShadCN utility (cn)
-└── proxy.ts            # WorkOS auth proxy
+│   ├── r2.ts             # Cloudflare R2 helpers
+│   └── utils.ts          # ShadCN utility (cn)
+├── test/
+│   └── setup.ts          # Vitest setup (jest-dom matchers)
+└── proxy.ts              # WorkOS auth proxy
 ```
 
-## Adding ShadCN Components
+## Adding Components
+
+**ShadCN UI:**
 
 ```bash
 pnpm dlx shadcn@latest add button
 ```
 
-See the [ShadCN docs](https://ui.shadcn.com/) for available components.
+**AI Elements** (for AI-specific UI like chat, messages, code blocks):
+
+```bash
+pnpm dlx shadcn@latest add https://elements.ai-sdk.dev/api/registry/conversation.json
+```
+
+## Claude Code Skills
+
+This project includes Claude Code skills for common workflows:
+
+| Skill | Description |
+| ----- | ----------- |
+| `/setup-project` | Guided environment setup |
+| `/commit` | Atomic commit workflow |
+| `/pr` | Create a GitHub pull request |

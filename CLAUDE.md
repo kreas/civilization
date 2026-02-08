@@ -1,4 +1,4 @@
-# AI Starter
+# AI Starter Pack
 
 ## Build & Dev Commands
 
