@@ -46,6 +46,27 @@
   --radius-2xl: calc(var(--radius) + 8px);
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
+
+  --font-headline: "aktiv-grotesk", sans-serif;
+
+  --color-brand-primary: #001cbf;
+  --color-brand-primary-container: #0028ff;
+  --color-brand-on-primary: #ffffff;
+  --color-brand-surface: #fbf8ff;
+  --color-brand-surface-container-low: #f4f2ff;
+  --color-brand-surface-container: #eeecfc;
+  --color-brand-surface-container-high: #e8e7f6;
+  --color-brand-surface-container-highest: #e2e1f0;
+  --color-brand-on-background: #1a1b26;
+  --color-brand-on-surface-variant: #444557;
+  --color-brand-outline-variant: #c5c5da;
+  --color-brand-primary-fixed: #dfe0ff;
+  --color-brand-on-primary-fixed: #000964;
+  --color-brand-surface-variant: #e2e1f0;
+  --color-brand-secondary: #4a55b4;
+  --color-brand-secondary-container: #909bff;
+  --color-brand-inverse-surface: #2f303b;
+  --color-brand-error: #ba1a1a;
 }
 
 :root {
@@ -123,5 +144,12 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .font-headline {
+    font-family: "aktiv-grotesk", sans-serif;
+    font-weight: 600;
   }
 }
