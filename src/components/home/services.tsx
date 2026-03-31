@@ -5,27 +5,27 @@ import { AnimateIn } from './animate-in';
 const services = [
   {
     number: '01',
-    title: 'Web Systems',
+    title: 'AI-Powered Software',
     description:
-      'Scalable, resilient web architectures designed for massive throughput and zero-latency user experiences.',
+      'Custom AI agents, intelligent workflows, and machine learning systems built for your specific business problems — not off-the-shelf SaaS.',
   },
   {
     number: '02',
-    title: 'Mobile Interfaces',
+    title: 'Legacy Modernization',
     description:
-      'Native experiences that prioritize ergonomic flow and visual precision across all device ecosystems.',
+      'We take aging systems and rebuild them for the AI era. Your operations keep running while we replace the engine underneath.',
   },
   {
     number: '03',
-    title: 'Enterprise Strategy',
+    title: 'Discovery & Strategy',
     description:
-      'Consulting on digital transformation, legacy modernization, and long-term technical debt mitigation.',
+      'Before we write a line of code, we map your workflows, identify risks, and define exactly what success looks like. Discovery is where we earn trust.',
   },
   {
     number: '04',
-    title: 'Cloud Orchestration',
+    title: 'The Dark Factory',
     description:
-      'Automated infrastructure deployment and multi-cloud management focused on security and cost-efficiency.',
+      'Our methodology: AI agents handle implementation while our humans focus on strategy and oversight. The result is production-grade software at unprecedented speed.',
   },
 ];
 
@@ -38,7 +38,7 @@ export function Services() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
           <div className="md:col-span-4">
             <AnimateIn delay={0}>
-              <h2 id="services-heading" className="font-headline text-4xl tracking-tight mb-6">Core Services</h2>
+              <h2 id="services-heading" className="font-headline text-4xl tracking-tight mb-6">What We Do</h2>
               <div className="h-1 w-20 bg-brand-primary-container" />
             </AnimateIn>
           </div>
