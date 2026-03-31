@@ -5,7 +5,8 @@ import { Footer } from './footer';
 describe('Footer', () => {
   it('renders the logo', () => {
     render(<Footer />);
-    expect(screen.getByText('CIVILIZATION')).toBeInTheDocument();
+    const logo = screen.getByAltText('Civilization');
+    expect(logo).toBeInTheDocument();
   });
 
   it('renders footer links', () => {

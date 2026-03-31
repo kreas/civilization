@@ -11,7 +11,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: 'Civilization Tech',
-  description: 'We build software that contributes.',
+  description: 'AI software development studio. Our AI builds. Our humans think. Production-grade software for companies that make things in the real world.',
 };
 
 export default function RootLayout({
@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <Script src="https://use.typekit.net/ohv2pqo.js" strategy="beforeInteractive" />
         <Script id="typekit-load" strategy="beforeInteractive">

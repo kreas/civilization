@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>STUDIO | CIVILIZATION TECH</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-tertiary-fixed-variant": "#920600",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-container": "#212d8d",
+                        "on-secondary-fixed": "#000964",
+                        "surface-variant": "#e2e1f0",
+                        "tertiary": "#7f0500",
+                        "primary": "#001cbf",
+                        "inverse-surface": "#2f303b",
+                        "background": "#fbf8ff",
+                        "surface-container-high": "#e8e7f6",
+                        "tertiary-container": "#aa0b01",
+                        "on-primary-container": "#bec4ff",
+                        "surface-container": "#eeecfc",
+                        "on-primary-fixed-variant": "#0021dc",
+                        "on-primary-fixed": "#000964",
+                        "on-tertiary-fixed": "#400100",
+                        "on-surface-variant": "#444557",
+                        "primary-container": "#0028ff",
+                        "on-secondary-fixed-variant": "#313c9b",
+                        "tertiary-fixed-dim": "#ffb4a7",
+                        "outline": "#757689",
+                        "surface-container-highest": "#e2e1f0",
+                        "primary-fixed": "#dfe0ff",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-container": "#ffb6aa",
+                        "on-background": "#1a1b26",
+                        "secondary-container": "#909bff",
+                        "tertiary-fixed": "#ffdad4",
+                        "on-error": "#ffffff",
+                        "error": "#ba1a1a",
+                        "surface-bright": "#fbf8ff",
+                        "inverse-primary": "#bdc2ff",
+                        "surface-dim": "#dad8e8",
+                        "inverse-on-surface": "#f1efff",
+                        "on-error-container": "#93000a",
+                        "on-primary": "#ffffff",
+                        "outline-variant": "#c5c5da",
+                        "surface-container-low": "#f4f2ff",
+                        "secondary": "#4a55b4",
+                        "surface": "#fbf8ff",
+                        "on-surface": "#1a1b26",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed": "#dfe0ff",
+                        "surface-tint": "#273fff",
+                        "primary-fixed-dim": "#bdc2ff",
+                        "secondary-fixed-dim": "#bdc2ff"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .headline-font { font-family: 'Space Grotesk', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary-fixed selection:text-on-primary-fixed antialiased">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fbf8ff]/80 dark:bg-[#1a1b26]/80 backdrop-blur-xl">
+<div class="flex justify-between items-center px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-semibold tracking-tighter text-[#1a1b26] dark:text-[#fbf8ff]">STUDIO</div>
+<div class="hidden md:flex gap-10 items-center">
+<a class="font-['Space_Grotesk'] font-semibold tracking-tight text-sm uppercase text-[#0028ff] dark:text-[#4d66ff] border-b-2 border-[#0028ff] pb-1 hover:opacity-100 transition-all duration-300" href="#">Home</a>
+<a class="font-['Space_Grotesk'] font-semibold tracking-tight text-sm uppercase text-[#1a1b26] dark:text-[#fbf8ff] opacity-70 hover:opacity-100 hover:text-[#0028ff] transition-all duration-300" href="#">Services</a>
+<a class="font-['Space_Grotesk'] font-semibold tracking-tight text-sm uppercase text-[#1a1b26] dark:text-[#fbf8ff] opacity-70 hover:opacity-100 hover:text-[#0028ff] transition-all duration-300" href="#">Case Studies</a>
+<a class="font-['Space_Grotesk'] font-semibold tracking-tight text-sm uppercase text-[#1a1b26] dark:text-[#fbf8ff] opacity-70 hover:opacity-100 hover:text-[#0028ff] transition-all duration-300" href="#">Process</a>
+<a class="font-['Space_Grotesk'] font-semibold tracking-tight text-sm uppercase text-[#1a1b26] dark:text-[#fbf8ff] opacity-70 hover:opacity-100 hover:text-[#0028ff] transition-all duration-300" href="#">Contact</a>
+</div>
+<button class="bg-primary-container text-on-primary px-6 py-2.5 font-['Space_Grotesk'] font-semibold tracking-tight text-sm uppercase scale-95 active:scale-90 transition-transform">
+                Get a Quote
+            </button>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="px-8 mb-32 max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-12 gap-6 items-end">
+<div class="col-span-12 lg:col-span-8">
+<span class="text-primary font-semibold tracking-[0.2em] uppercase text-xs mb-6 block">Civilization Tech | Boutique Engineering</span>
+<h1 class="headline-font font-semibold text-6xl md:text-8xl lg:text-[7rem] leading-[0.9] tracking-tighter text-on-background mb-8">
+                        We build software that <span class="text-primary">contributes.</span>
+</h1>
+</div>
+<div class="col-span-12 lg:col-span-4 pb-4">
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-sm">
+                        An architectural approach to digital infrastructure. We engineer high-performance systems for the next generation of industry leaders.
+                    </p>
+</div>
+</div>
+<div class="mt-16 w-full h-[614px] overflow-hidden">
+<img alt="Architectural structure" class="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-700" data-alt="monolithic modern concrete building facade with clean lines and geometric shadows under a bright clear blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBimazDOOyJUwFAckF700TCW1St6sRVBQO-RhMni0ndsQMbvR6caNh1FWI2pjF58Iu6fYqifC0jQtmwNAyVj8N_Q8I-SPgGFJfeV3bqwvYMi9Y9p-zw3H0eulgrbMgfhnz8nhf_ppgaR-QzTd4SbskahQrv5Z5YNeZfntdVc-UwaGPsbxZiMx9FuW-Gp9bqI2xjuPrvv0hq8olU-U762VLyTst1yXkYrf1PgZrmaokKLEUe4VNKlLMu1bEnGhdnwZQSxsz3mTsLMCI"/>
+</div>
+</section>
+<!-- Services Section: Tonal Layering -->
+<section class="bg-surface-container-low py-32">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="grid grid-cols-12 gap-12">
+<div class="col-span-12 md:col-span-4">
+<h2 class="headline-font text-4xl font-semibold tracking-tight mb-6">Core Services</h2>
+<div class="h-1 w-20 bg-primary"></div>
+</div>
+<div class="col-span-12 md:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-20">
+<!-- Service 01 -->
+<div class="group">
+<span class="text-primary-container font-headline text-5xl font-light block mb-6 opacity-30 group-hover:opacity-100 transition-opacity">01</span>
+<h3 class="headline-font text-2xl font-semibold mb-4">Web Systems</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">Scalable, resilient web architectures designed for massive throughput and zero-latency user experiences.</p>
+<a class="text-primary font-semibold flex items-center gap-2 group-hover:gap-4 transition-all" href="#">
+                                Explore <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Service 02 -->
+<div class="group">
+<span class="text-primary-container font-headline text-5xl font-light block mb-6 opacity-30 group-hover:opacity-100 transition-opacity">02</span>
+<h3 class="headline-font text-2xl font-semibold mb-4">Mobile Interfaces</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">Native experiences that prioritize ergonomic flow and visual precision across all device ecosystems.</p>
+<a class="text-primary font-semibold flex items-center gap-2 group-hover:gap-4 transition-all" href="#">
+                                Explore <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Service 03 -->
+<div class="group">
+<span class="text-primary-container font-headline text-5xl font-light block mb-6 opacity-30 group-hover:opacity-100 transition-opacity">03</span>
+<h3 class="headline-font text-2xl font-semibold mb-4">Enterprise Strategy</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">Consulting on digital transformation, legacy modernization, and long-term technical debt mitigation.</p>
+<a class="text-primary font-semibold flex items-center gap-2 group-hover:gap-4 transition-all" href="#">
+                                Explore <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Service 04 -->
+<div class="group">
+<span class="text-primary-container font-headline text-5xl font-light block mb-6 opacity-30 group-hover:opacity-100 transition-opacity">04</span>
+<h3 class="headline-font text-2xl font-semibold mb-4">Cloud Orchestration</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">Automated infrastructure deployment and multi-cloud management focused on security and cost-efficiency.</p>
+<a class="text-primary font-semibold flex items-center gap-2 group-hover:gap-4 transition-all" href="#">
+                                Explore <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Selected Works: Bento Layout -->
+<section class="py-32 max-w-screen-2xl mx-auto px-8">
+<h2 class="headline-font text-5xl font-semibold tracking-tight mb-16">Selected Works</h2>
+<div class="grid grid-cols-12 gap-8 h-auto lg:h-[900px]">
+<!-- Case Study 1 -->
+<div class="col-span-12 lg:col-span-7 bg-surface-container h-full relative group overflow-hidden">
+<img alt="Cybersecurity interface" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="abstract close-up of high-tech circuit board with blue glowing lights and reflective metallic surfaces" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1T6o10mQgv61slBLhKz9y3uqQkrOHwJnBVTBYFthXdIIriB22NO4qBslZZEtgWah_KuiHEvenC8kTuAALmd-fq-CpuZWPRL6WDdGcfPp-5G8y1I1j6jP80l0D2vdrKLZy-ZvIBzxUYN4xVhW8-5RMN-YS2_FZmne-j2WoeZBdJqhcxUc0VdEtrHVoBTfy9zAj1FL0PoYy_WJQnbi7LH1P1vqf5ZsnMHIyml7PC2cHOzCUUj7Et67CQaTC_TPvZT0xXWYiwXb5j44"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 to-transparent p-12 flex flex-col justify-end">
+<span class="text-primary-fixed font-semibold uppercase tracking-widest text-xs mb-2">Fintech Infrastructure</span>
+<h3 class="headline-font text-3xl font-semibold text-white mb-4">Aura Global Banking</h3>
+<p class="text-white/70 max-w-md">Redefining high-frequency transaction security for a global multi-currency platform.</p>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-5 flex flex-col gap-8">
+<!-- Case Study 2 -->
+<div class="h-1/2 bg-surface-container-high relative group overflow-hidden">
+<img alt="Data visualization" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="digital representation of complex network nodes and fiber optic data streams in deep blue space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5HT_z-yPRe2d7VC3gDxMUH8AcWLSWPmENVXC9YtPIkuWeEEac6ASeWEbIqfJwp1sm8SLS3UoeeC531Se4OMenxfQvlOFvlHRmlHPvJabVy9UaNFUBWu-UxC61u8_cLuL-Webm6x5tb3KxILgEqO7I61sQHUOty09t0ERLdT5-56NEROB4N-zRRtw-ItlRZIuSOqccmriwrJD5iXjOAObZeG-9xLf7hyjcpzDkiGRMU9Qy4iwqEMTNFmoH6oAeEKClFNwwatpvWP8"/>
+<div class="absolute inset-0 bg-on-background/40 p-8 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity">
+<h3 class="headline-font text-2xl font-semibold text-white">Vortex Data Engine</h3>
+</div>
+</div>
+<!-- Case Study 3 -->
+<div class="h-1/2 bg-surface-container-highest relative group overflow-hidden">
+<img alt="Abstract art" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="minimalist sculptural architectural details showing clean edges and light patterns on white stone" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB69OW4p8K0xHVmGe9Xvy0cOFwsiNh7O3yQDNY_vlaPb7oMq_eBZ11_2CGf4WHdSzCa-uRVyUmPrPiUijS5zq5rtiVUvF5K5MLlO_hcxse-GbYuR3-C9bD7YMe-GPw1rkkBZyI7ZoNlJtb--ODbTT6q-HH64e6zhlUCweT8dmPdt4MWB32FH9B5_CX-3AIpubxkCaqGgr4jCj_in5BC7h23Nffy-r2qpmrL9WgAllBQmlr3JiWWlV8p4ouSk4Z4tWWVWjYH6rN1V-o"/>
+<div class="absolute inset-0 bg-on-background/40 p-8 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity">
+<h3 class="headline-font text-2xl font-semibold text-white">Prism Design System</h3>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section: Structural Bleed -->
+<section class="relative bg-on-background text-white overflow-hidden py-40">
+<div class="max-w-screen-2xl mx-auto px-8 relative z-10">
+<div class="grid grid-cols-12 gap-12 items-center">
+<div class="col-span-12 lg:col-span-6">
+<h2 class="headline-font text-5xl md:text-7xl font-semibold tracking-tighter leading-none mb-8">
+                            Ready to build something <span class="text-primary-fixed">meaningful?</span>
+</h2>
+<p class="text-surface-variant text-xl mb-12 max-w-lg">
+                            We are currently accepting new commissions for Q4 2024. Let's discuss your architectural vision for the web.
+                        </p>
+<div class="flex flex-col sm:flex-row gap-6">
+<button class="bg-primary text-white px-10 py-5 font-headline font-semibold uppercase tracking-tight text-sm hover:bg-primary-container transition-colors">
+                                Start a Project
+                            </button>
+<button class="border border-outline-variant px-10 py-5 font-headline font-semibold uppercase tracking-tight text-sm hover:bg-white/10 transition-colors">
+                                View Our Process
+                            </button>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-6 lg:translate-x-20">
+<div class="aspect-square bg-surface-container-low/10 backdrop-blur-3xl p-12 border border-white/10">
+<div class="h-full flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-primary-fixed text-6xl mb-6">architecture</span>
+<h4 class="headline-font text-3xl font-semibold mb-4">Precision Engineering</h4>
+<p class="text-surface-variant/70 leading-relaxed">Our studio operates with a 1:4 engineer-to-project ratio, ensuring unprecedented attention to detail and code quality.</p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="border-t border-white/20 pt-4">
+<span class="block text-2xl font-headline font-semibold">99.9%</span>
+<span class="text-xs uppercase tracking-widest text-surface-variant/50">Uptime SLA</span>
+</div>
+<div class="border-t border-white/20 pt-4">
+<span class="block text-2xl font-headline font-semibold">24/7</span>
+<span class="text-xs uppercase tracking-widest text-surface-variant/50">Core Support</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Background element -->
+<div class="absolute top-0 right-0 w-1/3 h-full bg-primary/10 -skew-x-12 translate-x-1/2"></div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f4f2ff] dark:bg-[#11121a] flex flex-col md:flex-row justify-between items-center px-12 py-10 w-full border-t border-[#c5c5da]/15">
+<div class="mb-6 md:mb-0">
+<div class="text-lg font-semibold text-[#1a1b26] dark:text-[#fbf8ff]">STUDIO</div>
+<p class="font-['Inter'] text-xs tracking-wide text-[#1a1b26] dark:text-[#fbf8ff] opacity-60 mt-2">© 2024 Architectural Monolith Studio. All rights reserved.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-['Inter'] text-xs tracking-wide text-[#1a1b26] dark:text-[#fbf8ff] opacity-60 hover:text-[#0028ff] hover:opacity-100 transition-colors" href="#">Privacy Policy</a>
+<a class="font-['Inter'] text-xs tracking-wide text-[#1a1b26] dark:text-[#fbf8ff] opacity-60 hover:text-[#0028ff] hover:opacity-100 transition-colors" href="#">Terms of Service</a>
+<a class="font-['Inter'] text-xs tracking-wide text-[#1a1b26] dark:text-[#fbf8ff] opacity-60 hover:text-[#0028ff] hover:opacity-100 transition-colors" href="#">LinkedIn</a>
+<a class="font-['Inter'] text-xs tracking-wide text-[#1a1b26] dark:text-[#fbf8ff] opacity-60 hover:text-[#0028ff] hover:opacity-100 transition-colors" href="#">GitHub</a>
+</div>
+</footer>
+</body></html>

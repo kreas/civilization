@@ -14,11 +14,14 @@ describe('Hero', () => {
     expect(screen.getByText(/contributes./i)).toBeInTheDocument();
   });
 
-  it('renders the hero image', () => {
+  it('renders the hero video', () => {
     render(<Hero />);
-    const img = screen.getByAltText('Architectural structure');
-    expect(img).toBeInTheDocument();
-    expect(img).toHaveAttribute('src', '/images/home/hero.jpg');
+    const video = document.querySelector('video');
+    expect(video).toBeInTheDocument();
+    expect(video).toHaveAttribute('src', '/videos/home/hero-video.webm');
+    expect(video).toHaveAttribute('autoplay');
+    expect(video).toHaveAttribute('loop');
+    expect(video!.muted).toBe(true);
   });
 
   it('renders the description text', () => {

@@ -15,19 +15,15 @@ describe('SelectedWorks', () => {
     expect(screen.getByText('Prism Design System')).toBeInTheDocument();
   });
 
-  it('renders case study images', () => {
+  it('renders case study images as decorative', () => {
     render(<SelectedWorks />);
-    expect(screen.getByAltText('Cybersecurity interface')).toHaveAttribute(
-      'src',
-      '/images/home/case-study-1.jpg'
-    );
-    expect(screen.getByAltText('Data visualization')).toHaveAttribute(
-      'src',
-      '/images/home/case-study-2.jpg'
-    );
-    expect(screen.getByAltText('Abstract art')).toHaveAttribute(
-      'src',
-      '/images/home/case-study-3.jpg'
-    );
+    const images = screen.getAllByRole('presentation');
+    expect(images).toHaveLength(3);
+  });
+
+  it('has aria-labelledby on the section', () => {
+    render(<SelectedWorks />);
+    const section = document.getElementById('works');
+    expect(section).toHaveAttribute('aria-labelledby', 'works-heading');
   });
 });

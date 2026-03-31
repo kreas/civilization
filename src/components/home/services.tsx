@@ -1,3 +1,7 @@
+'use client';
+
+import { AnimateIn } from './animate-in';
+
 const services = [
   {
     number: '01',
@@ -25,33 +29,40 @@ const services = [
   },
 ];
 
+const cardDelays = [0, 100, 200, 300];
+
 export function Services() {
   return (
-    <section id="services" className="bg-brand-surface-container-low py-32">
+    <section id="services" aria-labelledby="services-heading" className="bg-brand-surface-container-low py-16 sm:py-32">
       <div className="max-w-screen-2xl mx-auto px-8">
-        <div className="grid grid-cols-12 gap-12">
-          <div className="col-span-12 md:col-span-4">
-            <h2 className="font-headline text-4xl tracking-tight mb-6">Core Services</h2>
-            <div className="h-1 w-20 bg-brand-primary-container" />
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
+          <div className="md:col-span-4">
+            <AnimateIn delay={0}>
+              <h2 id="services-heading" className="font-headline text-4xl tracking-tight mb-6">Core Services</h2>
+              <div className="h-1 w-20 bg-brand-primary-container" />
+            </AnimateIn>
           </div>
-          <div className="col-span-12 md:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-20">
-            {services.map((service) => (
-              <div key={service.number} className="group">
-                <span className="text-brand-primary-container font-headline text-5xl font-light block mb-6 opacity-30 group-hover:opacity-100 transition-opacity">
-                  {service.number}
-                </span>
-                <h3 className="font-headline text-2xl mb-4">{service.title}</h3>
-                <p className="text-brand-on-surface-variant leading-relaxed mb-6">
-                  {service.description}
-                </p>
-                <a
-                  href="#"
-                  className="text-brand-primary-container font-semibold flex items-center gap-2 group-hover:gap-4 transition-all"
-                >
-                  Explore
-                  <span aria-hidden="true">&rarr;</span>
-                </a>
-              </div>
+          <div className="md:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12 md:gap-y-20">
+            {services.map((service, index) => (
+              <AnimateIn key={service.number} delay={cardDelays[index]}>
+                <div className="group">
+                  <span aria-hidden="true" className="text-brand-primary-container font-headline text-5xl font-light block mb-6 opacity-30 group-hover:opacity-100 transition-opacity">
+                    {service.number}
+                  </span>
+                  <h3 className="font-headline text-2xl mb-4">{service.title}</h3>
+                  <p className="text-brand-on-surface-variant leading-relaxed mb-6">
+                    {service.description}
+                  </p>
+                  <a
+                    href="#"
+                    aria-label={`Explore ${service.title}`}
+                    className="text-brand-primary-container font-semibold flex items-center gap-2 group-hover:gap-4 transition-all"
+                  >
+                    Explore
+                    <span aria-hidden="true">&rarr;</span>
+                  </a>
+                </div>
+              </AnimateIn>
             ))}
           </div>
         </div>
