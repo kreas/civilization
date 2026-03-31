@@ -4,7 +4,7 @@ import { BrandButton } from '@/components/ui/brand-button';
 
 export function LeadCaptureCard() {
   return (
-    <div className="bg-brand-surface-container-low/10 backdrop-blur-3xl p-10 md:p-12 border border-white/10 rounded-2xl">
+    <div className="border-t border-white/10 pt-10 lg:pt-12 lg:border-t-0 lg:bg-brand-surface-container-low/10 lg:backdrop-blur-3xl lg:p-12 lg:border lg:border-white/10 lg:rounded-2xl">
       <div className="flex flex-col gap-8">
         <div>
           <h4 className="font-headline text-2xl mb-2">Start a conversation</h4>

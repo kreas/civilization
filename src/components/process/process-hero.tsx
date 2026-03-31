@@ -5,9 +5,9 @@ import { AnimateIn } from '@/components/home/animate-in';
 
 export function ProcessHero() {
   return (
-    <section className="px-8 mb-32 max-w-screen-2xl mx-auto">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start pt-8">
-        <div className="pt-8">
+    <section className="px-8 mb-16 sm:mb-32 max-w-screen-2xl mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start lg:pt-8">
+        <div className="lg:pt-8">
           <AnimateIn delay={0}>
             <span className="text-brand-primary-container font-headline tracking-[0.2em] uppercase text-xs mb-6 block">
               Methodology

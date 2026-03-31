@@ -6,10 +6,10 @@ import { BrandButton } from '@/components/ui/brand-button';
 
 export function ProcessCTA() {
   return (
-    <section className="relative bg-brand-on-background text-white overflow-hidden py-40">
-      <div className="max-w-screen-2xl mx-auto px-8 relative z-10">
-        <div className="grid grid-cols-12 gap-12 items-center">
-          <div className="col-span-12 lg:col-span-6">
+    <section className="relative bg-brand-on-background text-white overflow-hidden py-20 sm:py-40">
+      <div className="max-w-6xl mx-auto px-8 relative z-10">
+        <div className="flex flex-col lg:flex-row gap-12 items-center">
+          <div className="w-full lg:w-1/2">
             <AnimateIn delay={0} direction="left">
               <h2 className="font-headline text-5xl md:text-7xl tracking-brand-headline leading-none mb-8">
                 Ready to build
@@ -26,14 +26,14 @@ export function ProcessCTA() {
               </div>
             </AnimateIn>
           </div>
-          <div className="col-span-12 lg:col-span-6">
+          <div className="w-full lg:w-1/2">
             <AnimateIn delay={150} direction="right">
               <LeadCaptureCard />
             </AnimateIn>
           </div>
         </div>
       </div>
-      <div className="absolute top-0 right-0 w-1/3 h-full bg-brand-primary-container/10 -skew-x-12 translate-x-1/2" />
+      <div className="absolute top-0 right-0 w-2/3 h-full bg-gradient-to-l from-brand-primary-container/15 via-brand-primary-container/5 to-transparent -skew-x-12 translate-x-1/4" />
     </section>
   );
 }
