@@ -34,15 +34,15 @@ const cardDelays = [0, 100, 200, 300];
 export function Services() {
   return (
     <section id="services" aria-labelledby="services-heading" className="bg-brand-surface-container-low py-16 sm:py-32">
-      <div className="max-w-screen-2xl mx-auto px-8">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
-          <div className="md:col-span-4">
+      <div className="max-w-7xl mx-auto px-8">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-20">
+          <div className="md:col-span-3">
             <AnimateIn delay={0}>
               <h2 id="services-heading" className="font-headline text-4xl tracking-tight mb-6">What We Do</h2>
               <div className="h-1 w-20 bg-brand-primary-container" />
             </AnimateIn>
           </div>
-          <div className="md:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12 md:gap-y-20">
+          <div className="md:col-span-9 grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12 md:gap-y-20">
             {services.map((service, index) => (
               <AnimateIn key={service.number} delay={cardDelays[index]}>
                 <div className="group">

@@ -4,7 +4,7 @@ import { AnimateIn } from './animate-in';
 
 export function SelectedWorks() {
   return (
-    <section id="works" aria-labelledby="works-heading" className="py-32 max-w-screen-2xl mx-auto px-8">
+    <section id="works" aria-labelledby="works-heading" className="py-32 max-w-7xl mx-auto px-8">
       <AnimateIn delay={0}>
         <h2 id="works-heading" className="font-headline text-5xl tracking-tight mb-6">Recent Work</h2>
         <div className="h-1 w-20 bg-brand-primary-container mb-16" aria-hidden="true" />

@@ -4,7 +4,7 @@ import { AnimateIn } from './animate-in';
 
 export function Hero() {
   return (
-    <section className="px-8 mb-32 max-w-screen-2xl mx-auto">
+    <section className="px-8 mb-32 max-w-7xl mx-auto">
       <div className="grid grid-cols-12 gap-6 items-start">
         <div className="col-span-12 lg:col-span-8">
           <AnimateIn delay={0}>

@@ -23,7 +23,7 @@ const stats = [
 export function DarkFactory() {
   return (
     <section className="relative bg-brand-on-background text-white overflow-hidden py-16 sm:py-32">
-      <div className="max-w-screen-2xl mx-auto px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-20">
           {/* Left column */}
           <div className="md:col-span-5">
