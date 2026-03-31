@@ -1,9 +1,9 @@
-import { Navbar } from '@/components/home/navbar';
+import { Navbar } from '@/components/layout/navbar';
 import { Hero } from '@/components/home/hero';
 import { Services } from '@/components/home/services';
 import { SelectedWorks } from '@/components/home/selected-works';
 import { CTA } from '@/components/home/cta';
-import { Footer } from '@/components/home/footer';
+import { Footer } from '@/components/layout/footer';
 
 export default function Home() {
   return (

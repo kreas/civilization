@@ -6,11 +6,11 @@ import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/s
 import { Menu } from 'lucide-react';
 
 const navLinks = [
-  { label: 'Home', href: '#' },
-  { label: 'Services', href: '#services' },
-  { label: 'Case Studies', href: '#works' },
-  { label: 'Process', href: '#' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Home', href: '/' },
+  { label: 'Services', href: '/#services' },
+  { label: 'Work', href: '/#works' },
+  { label: 'Process', href: '/process' },
+  { label: 'Contact', href: '/#contact' },
 ];
 
 export function Navbar() {
@@ -20,14 +20,14 @@ export function Navbar() {
     <header>
       <nav aria-label="Main" className="fixed top-0 w-full z-50 bg-[#fbf8ff]/80 backdrop-blur-xl">
         <div className="flex justify-between items-center px-6 sm:px-8 py-4 sm:py-6 max-w-screen-2xl mx-auto">
-          <a href="#" aria-label="Civilization — go to homepage">
+          <a href="/" aria-label="Civilization — go to homepage">
             <Image
               src="/logo.webp"
               alt=""
               width={274}
               height={32}
               style={{ width: 'auto' }}
-              className="h-6 sm:h-8"
+              className="h-4 sm:h-[1.4rem]"
               priority
             />
           </a>
@@ -36,7 +36,7 @@ export function Navbar() {
               <li key={link.label}>
                 <a
                   href={link.href}
-                  className="font-headline text-sm uppercase tracking-tight text-brand-on-background opacity-70 hover:opacity-100 hover:text-brand-primary-container transition-all duration-300"
+                  className="font-headline text-sm uppercase tracking-wide text-brand-on-background opacity-70 hover:opacity-100 hover:text-brand-primary-container transition-all duration-300"
                 >
                   {link.label}
                 </a>
@@ -44,10 +44,10 @@ export function Navbar() {
             ))}
           </ul>
           <a
-            href="#contact"
-            className="hidden md:inline-block bg-brand-primary-container text-brand-on-primary px-6 py-2.5 font-headline text-sm uppercase tracking-tight active:scale-90 transition-transform rounded-md"
+            href="/#contact"
+            className="hidden md:inline-block bg-brand-primary-container text-brand-on-primary px-6 py-2.5 font-headline text-sm uppercase tracking-wide active:scale-90 transition-transform rounded-md"
           >
-            Get a Quote
+            Start Discovery
           </a>
 
           {/* Mobile hamburger */}
@@ -78,11 +78,11 @@ export function Navbar() {
                   ))}
                   <li>
                     <a
-                      href="#contact"
+                      href="/#contact"
                       onClick={() => setOpen(false)}
-                      className="mt-4 block bg-brand-primary-container text-brand-on-primary px-6 py-3 font-headline text-sm uppercase tracking-tight text-center active:scale-95 transition-transform rounded-md"
+                      className="mt-4 block bg-brand-primary-container text-brand-on-primary px-6 py-3 font-headline text-sm uppercase tracking-wide text-center active:scale-95 transition-transform rounded-md"
                     >
-                      Get a Quote
+                      Start Discovery
                     </a>
                   </li>
                 </ul>
