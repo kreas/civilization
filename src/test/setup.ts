@@ -17,9 +17,9 @@ if (typeof window !== 'undefined' && !('IntersectionObserver' in window)) {
     this.unobserve = vi.fn();
     this.disconnect = vi.fn();
     this.takeRecords = vi.fn(() => []);
-    this.root = null;
-    this.rootMargin = '';
-    this.thresholds = [];
+    Object.defineProperty(this, 'root', { value: null });
+    Object.defineProperty(this, 'rootMargin', { value: '' });
+    Object.defineProperty(this, 'thresholds', { value: [] });
   }) as unknown as typeof IntersectionObserver;
   vi.stubGlobal('IntersectionObserver', IntersectionObserverStub);
 }
