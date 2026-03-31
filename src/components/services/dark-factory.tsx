@@ -41,13 +41,13 @@ export function DarkFactory() {
                 Traditional software development is slow because humans do
                 everything. We separated the work. Our humans handle Discovery,
                 architecture, and strategic oversight. Our AI agents handle
-                implementation &mdash; writing code, running tests, iterating on
+                implementation - writing code, running tests, iterating on
                 builds around the clock. We call it the Dark Factory.
               </p>
             </AnimateIn>
           </div>
 
-          {/* Right column — stats */}
+          {/* Right column - stats */}
           <div className="md:col-span-7 flex items-center">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 w-full">
               {stats.map((stat, i) => (

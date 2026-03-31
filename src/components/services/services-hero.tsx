@@ -21,7 +21,7 @@ export function ServicesHero() {
           </AnimateIn>
           <AnimateIn delay={200}>
             <p className="text-brand-on-surface-variant text-lg leading-relaxed max-w-md">
-              Every Civilization engagement begins with Discovery — a deep,
+              Every Civilization engagement begins with Discovery - a deep,
               strategic investigation of your systems, workflows, and goals.
               What comes next depends on what we find.
             </p>

@@ -17,7 +17,7 @@ export function ServicesCTA() {
                 <span className="text-brand-primary-fixed">Discovery.</span>
               </h2>
               <p className="text-brand-surface-variant text-xl mb-12 max-w-lg">
-                Tell us what you&apos;re working with &mdash; aging systems, a
+                Tell us what you&apos;re working with - aging systems, a
                 product idea, or a process that needs AI. We&apos;ll start with
                 a conversation and see if Discovery is the right next step.
               </p>

@@ -29,7 +29,7 @@ function makeMockObserver() {
 
 // Simulate the element being attached to the ref so useEffect runs the observer.
 // jsdom renders renderHook into a div that is appended to document.body, so
-// the ref gets a real element — but only after the initial render. We need to
+// the ref gets a real element - but only after the initial render. We need to
 // trigger the useEffect by making sure the element exists.
 function withMockObserver(MockIO: ReturnType<typeof makeMockObserver>) {
   vi.stubGlobal('IntersectionObserver', MockIO as unknown as typeof IntersectionObserver);

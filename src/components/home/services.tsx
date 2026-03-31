@@ -7,7 +7,7 @@ const services = [
     number: '01',
     title: 'AI-Powered Software',
     description:
-      'Custom AI agents, intelligent workflows, and machine learning systems built for your specific business problems — not off-the-shelf SaaS.',
+      'Custom AI agents, intelligent workflows, and machine learning systems built for your specific business problems - not off-the-shelf SaaS.',
   },
   {
     number: '02',

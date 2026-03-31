@@ -18,7 +18,7 @@ export function CTA() {
               </h2>
               <p className="text-brand-surface-variant text-xl mb-0 lg:mb-12 max-w-lg">
                 Every engagement starts with Discovery. We&apos;ll map your systems,
-                identify opportunities, and show you exactly what&apos;s possible —
+                identify opportunities, and show you exactly what&apos;s possible -
                 before a single line of code is written.
               </p>
               <div className="hidden lg:flex flex-col sm:flex-row gap-6">

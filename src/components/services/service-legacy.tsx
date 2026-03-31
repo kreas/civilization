@@ -39,7 +39,7 @@ export function ServiceLegacy() {
             <AnimateIn delay={100}>
               <p className="text-brand-on-surface-variant text-lg leading-relaxed">
                 62% of US companies still run on outdated software. The problem
-                isn&apos;t that your systems don&apos;t work &mdash; it&apos;s
+                isn&apos;t that your systems don&apos;t work - it&apos;s
                 that they can&apos;t evolve. They can&apos;t integrate AI. They
                 can&apos;t scale with your business. We modernize legacy systems
                 without shutting down your operations. Your business keeps
@@ -78,7 +78,7 @@ export function ServiceLegacy() {
                 </h4>
                 <p className="text-brand-on-surface-variant text-sm leading-relaxed">
                   We took the software that runs an aluminum smelting plant
-                  &mdash; decades-old, brittle, undocumented &mdash; and rebuilt
+                  - decades-old, brittle, undocumented - and rebuilt
                   it for AI-driven operational efficiency. The plant never
                   stopped running.
                 </p>

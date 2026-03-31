@@ -10,7 +10,7 @@ export function SelectedWorks() {
         <div className="h-1 w-20 bg-brand-primary-container mb-16" aria-hidden="true" />
       </AnimateIn>
       <div className="flex flex-col lg:flex-row gap-8 lg:h-[900px]">
-        {/* Case Study 1 — Large */}
+        {/* Case Study 1 - Large */}
         <AnimateIn delay={100} className="lg:w-7/12">
           <div className="h-[400px] lg:h-full bg-brand-surface-container relative group overflow-hidden rounded-2xl">
             <img
@@ -31,7 +31,7 @@ export function SelectedWorks() {
           </div>
         </AnimateIn>
 
-        {/* Case Studies 2 & 3 — Stacked */}
+        {/* Case Studies 2 & 3 - Stacked */}
         <div className="lg:w-5/12 flex flex-col gap-8">
           <AnimateIn delay={200} className="h-[300px] lg:flex-1">
             <div className="h-full bg-brand-surface-container-high relative group overflow-hidden rounded-2xl">

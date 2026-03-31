@@ -20,7 +20,7 @@ export function Navbar() {
     <header>
       <nav aria-label="Main" className="fixed top-0 w-full z-50 bg-[#fbf8ff]/80 backdrop-blur-xl">
         <div className="flex justify-between items-center px-6 sm:px-8 py-4 sm:py-6 max-w-screen-2xl mx-auto">
-          <a href="/" aria-label="Civilization — go to homepage">
+          <a href="/" aria-label="Civilization - go to homepage">
             <Image
               src="/logo.webp"
               alt=""

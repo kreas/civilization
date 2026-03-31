@@ -61,14 +61,14 @@ export function ProcessTimeline() {
                   </div>
                   <div className="flex-1 space-y-6">
                     <h2 className="text-4xl font-headline font-semibold tracking-tight">
-                      1. Discovery — Understanding before building
+                      1. Discovery - Understanding before building
                     </h2>
                     <p className="text-brand-on-surface-variant text-lg leading-relaxed">
                       Every engagement starts here. Before a single line of code
                       is written, our strategists spend 4–6 weeks embedded in
                       your world. We audit your systems, map your workflows, talk
                       to your team, and define exactly what success looks like.
-                      Discovery isn&apos;t a formality — it&apos;s the phase that
+                      Discovery isn&apos;t a formality - it&apos;s the phase that
                       determines whether everything after it succeeds or fails.
                       By the end, you have a technical roadmap, a clear business
                       case, and full confidence that the plan is right.
@@ -90,7 +90,7 @@ export function ProcessTimeline() {
                           Workflow &amp; Risk Mapping
                         </h4>
                         <p className="text-sm text-brand-on-surface-variant">
-                          We document how your business actually operates — not
+                          We document how your business actually operates - not
                           how the org chart says it should. We surface integration
                           risks, data migration challenges, and capacity
                           constraints before they become surprises.
@@ -123,11 +123,11 @@ export function ProcessTimeline() {
                   </div>
                   <div className="flex-1 space-y-6">
                     <h2 className="text-4xl font-headline font-semibold tracking-tight">
-                      2. Implementation — AI agents build. Humans oversee.
+                      2. Implementation - AI agents build. Humans oversee.
                     </h2>
                     <p className="text-brand-on-surface-variant text-lg leading-relaxed">
                       Once Discovery is complete and the roadmap is locked, we
-                      flip the switch. Our AI agents take over implementation —
+                      flip the switch. Our AI agents take over implementation -
                       writing code, running tests, integrating with your systems,
                       and iterating on builds around the clock. Our human
                       strategists stay involved for architecture decisions,
@@ -166,7 +166,7 @@ export function ProcessTimeline() {
                           <p className="font-bold">Production-Grade from the Start</p>
                           <p className="text-xs text-brand-on-surface-variant">
                             Automated testing, documentation, and code review are
-                            built into every build cycle — not bolted on at the
+                            built into every build cycle - not bolted on at the
                             end.
                           </p>
                         </div>
@@ -198,14 +198,14 @@ export function ProcessTimeline() {
                   </div>
                   <div className="flex-1 space-y-6">
                     <h2 className="text-4xl font-headline font-semibold tracking-tight">
-                      3. Delivery — Your software, your team, your future
+                      3. Delivery - Your software, your team, your future
                     </h2>
                     <p className="text-brand-on-surface-variant text-lg leading-relaxed">
                       A project doesn&apos;t end when the code is deployed. We
                       enter a structured handoff phase to make sure your team can
                       run, maintain, and evolve the software we built. You get
                       full documentation, training, and a transition plan. We
-                      don&apos;t build black boxes — we build systems your people
+                      don&apos;t build black boxes - we build systems your people
                       can own.
                     </p>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">

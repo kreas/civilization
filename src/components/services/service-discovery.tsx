@@ -13,7 +13,7 @@ const deliverables = [
     number: '02',
     title: 'Workflow Mapping',
     description:
-      'We document how your business actually operates \u2014 not how the org chart says it should. This is where the real opportunities surface.',
+      'We document how your business actually operates - not how the org chart says it should. This is where the real opportunities surface.',
   },
   {
     number: '03',
@@ -49,8 +49,8 @@ export function ServiceDiscovery() {
               <p className="text-brand-on-surface-variant text-lg leading-relaxed mb-8">
                 We don&apos;t start with code. We start with questions.
                 What&apos;s broken? What&apos;s manual? Where does AI actually
-                create value &mdash; and where is it just hype? Discovery is a
-                4&ndash;6 week engagement where our strategists audit your
+                create value - and where is it just hype? Discovery is a
+                4-6 week engagement where our strategists audit your
                 systems, map your workflows, identify risks, and define what
                 success looks like.
               </p>
@@ -64,7 +64,7 @@ export function ServiceDiscovery() {
             </AnimateIn>
           </div>
 
-          {/* Right column — deliverables */}
+          {/* Right column - deliverables */}
           <div className="md:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-12">
             {deliverables.map((item, i) => (
               <AnimateIn key={item.number} delay={i * 100}>
@@ -94,7 +94,7 @@ export function ServiceDiscovery() {
                 <span className="text-[0.6rem] tracking-[0.2em] font-bold text-brand-primary">
                   DURATION
                 </span>
-                <p className="font-bold">4&ndash;6 weeks</p>
+                <p className="font-bold">4-6 weeks</p>
               </div>
               <div className="space-y-2">
                 <span className="text-[0.6rem] tracking-[0.2em] font-bold text-brand-primary">

@@ -6,7 +6,7 @@ const capabilities = [
   {
     title: 'AI agents for existing workflows',
     description:
-      'Customer support, internal operations, data processing, quality control \u2014 wherever repetitive human work can be elevated by AI.',
+      'Customer support, internal operations, data processing, quality control -wherever repetitive human work can be elevated by AI.',
   },
   {
     title: 'Intelligent automation',
@@ -39,7 +39,7 @@ export function ServiceAI() {
             <AnimateIn delay={100}>
               <p className="text-brand-on-surface-variant text-lg leading-relaxed">
                 Not every project requires a ground-up rebuild. Sometimes the
-                systems you have are solid &mdash; they just need AI capabilities
+                systems you have are solid - they just need AI capabilities
                 woven in. We integrate AI agents, automation, and intelligence
                 into your existing platforms and workflows. The goal is
                 measurable impact with minimal disruption.

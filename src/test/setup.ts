@@ -6,7 +6,7 @@ afterEach(() => {
   cleanup();
 });
 
-// jsdom does not implement IntersectionObserver — provide a no-op stub so that
+// jsdom does not implement IntersectionObserver - provide a no-op stub so that
 // components using useInView can render without throwing.
 if (typeof window !== 'undefined' && !('IntersectionObserver' in window)) {
   const IntersectionObserverStub = vi.fn(function (

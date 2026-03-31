@@ -44,7 +44,7 @@ export function ProcessHero() {
                 AVERAGE TIMELINE
               </p>
               <p className="text-2xl font-headline font-semibold tracking-tight">
-                12 Weeks — Discovery to Production
+                12 Weeks - Discovery to Production
               </p>
             </div>
           </div>

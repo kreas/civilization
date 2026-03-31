@@ -39,7 +39,7 @@ export function ServiceProducts() {
             <AnimateIn delay={100}>
               <p className="text-brand-on-surface-variant text-lg leading-relaxed">
                 You have a vision for something that doesn&apos;t exist yet
-                &mdash; a product that uses AI to solve a real problem in a new
+                - a product that uses AI to solve a real problem in a new
                 way. We take it from concept through Discovery to
                 production-grade software, using the Dark Factory methodology to
                 move at a pace that would take a traditional dev shop two to
@@ -48,7 +48,7 @@ export function ServiceProducts() {
             </AnimateIn>
           </div>
 
-          {/* Right column — capabilities + proof point */}
+          {/* Right column - capabilities + proof point */}
           <div className="md:col-span-7 space-y-12">
             <div className="space-y-8">
               {capabilities.map((item, i) => (
