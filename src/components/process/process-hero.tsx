@@ -10,20 +10,22 @@ export function ProcessHero() {
         <div className="lg:pt-8">
           <AnimateIn delay={0}>
             <span className="text-brand-primary-container font-headline tracking-[0.2em] uppercase text-xs mb-6 block">
-              Methodology
+              How We Work
             </span>
           </AnimateIn>
           <AnimateIn delay={100}>
             <h1 className="font-headline text-6xl md:text-8xl leading-[0.9] tracking-brand-display text-brand-on-background mb-8">
-              Built for the <br />
-              <span className="text-brand-primary-container">Monolith.</span>
+              Humans think. <br />
+              Agents build. <br />
+              <span className="text-brand-primary-container">You ship.</span>
             </h1>
           </AnimateIn>
           <AnimateIn delay={200}>
             <p className="text-brand-on-surface-variant text-lg leading-relaxed max-w-md">
-              We don&apos;t just ship code. We engineer digital infrastructure
-              that stands the test of time through mathematical precision and
-              iterative excellence.
+              Every Civilization project follows the same three-phase process:
+              we start by understanding your problem deeply, then our AI agents
+              build while our strategists oversee, and we hand you
+              production-grade software you can actually run.
             </p>
           </AnimateIn>
         </div>
@@ -39,10 +41,10 @@ export function ProcessHero() {
             />
             <div className="absolute bottom-0 left-0 p-8 bg-brand-surface/90 backdrop-blur-md max-w-sm">
               <p className="text-xs font-bold text-brand-primary mb-2">
-                PRECISION METRIC
+                AVERAGE TIMELINE
               </p>
               <p className="text-2xl font-headline font-semibold tracking-tight">
-                99.9% Uptime Architecture
+                12 Weeks — Discovery to Production
               </p>
             </div>
           </div>

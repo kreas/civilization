@@ -12,17 +12,17 @@ export function ProcessCTA() {
           <div className="w-full lg:w-1/2">
             <AnimateIn delay={0} direction="left">
               <h2 className="font-headline text-5xl md:text-7xl tracking-brand-headline leading-none mb-8">
-                Ready to build
+                Ready to start
                 <br />
-                <span className="text-brand-primary-fixed">the monolith?</span>
+                <span className="text-brand-primary-fixed">Discovery?</span>
               </h2>
               <p className="text-brand-surface-variant text-xl mb-0 lg:mb-12 max-w-lg">
-                Partner with Civilization Tech to engineer your next
-                mission-critical infrastructure.
+                Tell us what you&apos;re working with. We&apos;ll take it from
+                there.
               </p>
               <div className="hidden lg:flex flex-col sm:flex-row gap-6">
-                <BrandButton href="/#contact">Start a Project</BrandButton>
-                <BrandButton href="/process" variant="outline">See Our Process</BrandButton>
+                <BrandButton href="/#contact">Book a Discovery Call</BrandButton>
+                <BrandButton href="/#works" variant="outline">See Our Work</BrandButton>
               </div>
             </AnimateIn>
           </div>

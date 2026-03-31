@@ -4,14 +4,14 @@ import { AnimateIn } from '@/components/home/animate-in';
 
 const sidebarLinks = [
   { id: 'step-1', number: '01', label: 'DISCOVERY' },
-  { id: 'step-2', number: '02', label: 'CONSTRUCTION' },
-  { id: 'step-3', number: '03', label: 'OPERATION' },
+  { id: 'step-2', number: '02', label: 'IMPLEMENTATION' },
+  { id: 'step-3', number: '03', label: 'DELIVERY' },
 ];
 
 export function ProcessTimeline() {
   return (
     <section className="bg-brand-surface-container-low py-16 sm:py-32">
-      <div className="max-w-screen-2xl mx-auto px-8">
+      <div className="max-w-7xl mx-auto px-8">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
           {/* Sticky Sidebar Navigation */}
           <div className="hidden md:block md:col-span-3 sticky top-40 h-fit space-y-6">
@@ -61,32 +61,39 @@ export function ProcessTimeline() {
                   </div>
                   <div className="flex-1 space-y-6">
                     <h2 className="text-4xl font-headline font-semibold tracking-tight">
-                      1. Discovery &amp; Blueprinting
+                      1. Discovery — Understanding before building
                     </h2>
                     <p className="text-brand-on-surface-variant text-lg leading-relaxed">
-                      Before a single line of code is committed, we map the
-                      entire technical landscape. This is the definition of the
-                      &ldquo;blueprint&rdquo; phase where we analyze
-                      requirements, identify bottlenecks, and architect for
-                      scale.
+                      Every engagement starts here. Before a single line of code
+                      is written, our strategists spend 4–6 weeks embedded in
+                      your world. We audit your systems, map your workflows, talk
+                      to your team, and define exactly what success looks like.
+                      Discovery isn&apos;t a formality — it&apos;s the phase that
+                      determines whether everything after it succeeds or fails.
+                      By the end, you have a technical roadmap, a clear business
+                      case, and full confidence that the plan is right.
                     </p>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
                       <div className="p-6 border-l-2 border-brand-primary bg-brand-surface/40">
                         <h4 className="font-bold text-sm mb-2">
-                          Technical Mapping
+                          Technical Audit
                         </h4>
                         <p className="text-sm text-brand-on-surface-variant">
-                          Comprehensive audit of existing stacks and legacy
-                          integration points.
+                          We review your current systems, architecture, data, and
+                          infrastructure. We identify what&apos;s working,
+                          what&apos;s fragile, what&apos;s undocumented, and
+                          what&apos;s blocking you from moving forward.
                         </p>
                       </div>
                       <div className="p-6 border-l-2 border-brand-primary bg-brand-surface/40">
                         <h4 className="font-bold text-sm mb-2">
-                          Requirement Synthesis
+                          Workflow &amp; Risk Mapping
                         </h4>
                         <p className="text-sm text-brand-on-surface-variant">
-                          Transforming business goals into immutable technical
-                          specifications.
+                          We document how your business actually operates — not
+                          how the org chart says it should. We surface integration
+                          risks, data migration challenges, and capacity
+                          constraints before they become surprises.
                         </p>
                       </div>
                     </div>
@@ -116,40 +123,51 @@ export function ProcessTimeline() {
                   </div>
                   <div className="flex-1 space-y-6">
                     <h2 className="text-4xl font-headline font-semibold tracking-tight">
-                      2. Iterative Construction
+                      2. Implementation — AI agents build. Humans oversee.
                     </h2>
                     <p className="text-brand-on-surface-variant text-lg leading-relaxed">
-                      Execution is managed through high-velocity Agile sprints.
-                      We utilize advanced CI/CD pipelines to ensure every push is
-                      tested, validated, and structurally sound.
+                      Once Discovery is complete and the roadmap is locked, we
+                      flip the switch. Our AI agents take over implementation —
+                      writing code, running tests, integrating with your systems,
+                      and iterating on builds around the clock. Our human
+                      strategists stay involved for architecture decisions,
+                      quality assurance, and client communication. This is the
+                      Dark Factory in action: deterministic, consistent, and
+                      fast.
                     </p>
                     <div className="bg-brand-surface-container-highest p-8 rounded-lg overflow-hidden relative">
                       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
                         <div className="space-y-3">
                           <span className="text-[0.6rem] tracking-[0.2em] font-bold text-brand-primary">
-                            SPRINT CYCLE
+                            BUILD CYCLE
                           </span>
-                          <p className="font-bold">2-Week Intervals</p>
+                          <p className="font-bold">Continuous Iteration</p>
                           <p className="text-xs text-brand-on-surface-variant">
-                            Fast feedback loops with tangible outcomes.
+                            AI agents ship working builds daily, not on a
+                            two-week sprint cycle. Progress is visible and
+                            measurable from day one.
                           </p>
                         </div>
                         <div className="space-y-3">
                           <span className="text-[0.6rem] tracking-[0.2em] font-bold text-brand-primary">
-                            PIPELINE
+                            OVERSIGHT
                           </span>
-                          <p className="font-bold">Automated CI/CD</p>
+                          <p className="font-bold">Human-in-the-Loop</p>
                           <p className="text-xs text-brand-on-surface-variant">
-                            Zero-downtime deployment architecture.
+                            Every architectural decision and quality gate is
+                            reviewed by our strategists. AI handles volume.
+                            Humans handle judgment.
                           </p>
                         </div>
                         <div className="space-y-3">
                           <span className="text-[0.6rem] tracking-[0.2em] font-bold text-brand-primary">
                             QUALITY
                           </span>
-                          <p className="font-bold">Unit &amp; E2E Testing</p>
+                          <p className="font-bold">Production-Grade from the Start</p>
                           <p className="text-xs text-brand-on-surface-variant">
-                            85%+ coverage mandates for all modules.
+                            Automated testing, documentation, and code review are
+                            built into every build cycle — not bolted on at the
+                            end.
                           </p>
                         </div>
                       </div>
@@ -180,32 +198,39 @@ export function ProcessTimeline() {
                   </div>
                   <div className="flex-1 space-y-6">
                     <h2 className="text-4xl font-headline font-semibold tracking-tight">
-                      3. Launch &amp; Operation
+                      3. Delivery — Your software, your team, your future
                     </h2>
                     <p className="text-brand-on-surface-variant text-lg leading-relaxed">
-                      A project doesn&apos;t end at deployment. We enter a phase
-                      of operational excellence, monitoring performance metrics
-                      and scaling infrastructure as user demand grows.
+                      A project doesn&apos;t end when the code is deployed. We
+                      enter a structured handoff phase to make sure your team can
+                      run, maintain, and evolve the software we built. You get
+                      full documentation, training, and a transition plan. We
+                      don&apos;t build black boxes — we build systems your people
+                      can own.
                     </p>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                       <div className="group">
                         <div className="h-1 w-full bg-brand-outline-variant group-hover:bg-brand-primary transition-colors duration-500 mb-4" />
                         <h4 className="font-bold text-sm mb-2">
-                          Live Monitoring
+                          Documentation &amp; Training
                         </h4>
                         <p className="text-sm text-brand-on-surface-variant leading-relaxed">
-                          24/7 observability into system health and user
-                          interaction patterns.
+                          Complete technical documentation, architecture
+                          diagrams, and hands-on training for your team.
+                          Everything they need to maintain and extend the system
+                          without us.
                         </p>
                       </div>
                       <div className="group">
                         <div className="h-1 w-full bg-brand-outline-variant group-hover:bg-brand-primary transition-colors duration-500 mb-4" />
                         <h4 className="font-bold text-sm mb-2">
-                          Scale Orchestration
+                          Support Transition
                         </h4>
                         <p className="text-sm text-brand-on-surface-variant leading-relaxed">
-                          Automated horizontal scaling to manage traffic
-                          volatility.
+                          A defined support window after launch where we&apos;re
+                          available for bug fixes, performance tuning, and
+                          knowledge transfer. When we leave, you&apos;re not
+                          stranded.
                         </p>
                       </div>
                     </div>
