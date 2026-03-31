@@ -67,6 +67,9 @@
   --color-brand-secondary-container: #909bff;
   --color-brand-inverse-surface: #2f303b;
   --color-brand-error: #ba1a1a;
+
+  --tracking-brand-display: -0.02em;
+  --tracking-brand-headline: -0.015em;
 }
 
 :root {
