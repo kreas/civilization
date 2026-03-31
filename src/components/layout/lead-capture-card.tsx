@@ -6,7 +6,7 @@ export function LeadCaptureCard() {
   return (
     <div className="border-t border-white/10 pt-10 lg:pt-12 lg:border-t-0 lg:bg-brand-surface-container-low/10 lg:backdrop-blur-3xl lg:p-12 lg:border lg:border-white/10 lg:rounded-2xl">
       <div className="flex flex-col gap-8">
-        <div>
+        <div className="hidden lg:block">
           <h4 className="font-headline text-2xl mb-2">Start a conversation</h4>
           <p className="text-sm text-white/50">
             Tell us what you&apos;re working on. We&apos;ll take it from there.
