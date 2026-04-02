@@ -1,8 +1,21 @@
-import { drizzle } from 'drizzle-orm/libsql';
+import { drizzle, type LibSQLDatabase } from 'drizzle-orm/libsql';
 
-export const db = drizzle({
-  connection: {
-    url: process.env.TURSO_DATABASE_URL!,
-    authToken: process.env.TURSO_AUTH_TOKEN!,
+let _db: LibSQLDatabase | undefined;
+
+export function getDb(): LibSQLDatabase {
+  if (!_db) {
+    _db = drizzle({
+      connection: {
+        url: process.env.TURSO_DATABASE_URL!,
+        authToken: process.env.TURSO_AUTH_TOKEN!,
+      },
+    });
+  }
+  return _db;
+}
+
+export const db = new Proxy({} as LibSQLDatabase, {
+  get(_target, prop) {
+    return (getDb() as unknown as Record<string | symbol, unknown>)[prop];
   },
 });
